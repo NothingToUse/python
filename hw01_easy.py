@@ -9,7 +9,7 @@ __author__ = 'Лукичев А.В.'
 # код пишем тут...
 import random
 
-user_input = random.randint(1, 9999999999)
+user_input = str(random.randint(1, 9999999999))
 
 for i in user_input:
     print(int(i))
