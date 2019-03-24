@@ -73,7 +73,7 @@ elif user_input_task == 3:
     act_1 = int(input('Для пополнения массива введите 1'))
     while count >= 0:
         if act_1 == 1:
-            x = input('Пополните массив: ')
+            x = input('Пополните массив строго числами: ')
             old.append(x)
             count += 1
 
