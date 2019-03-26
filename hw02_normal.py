@@ -76,3 +76,5 @@ elif user_input_task == 4:  #  Модули подключены в начале
     print(rand_list_1)
     rand_list_2 = set(rand_list_1)
     print(rand_list_2)
+
+#  новый пулреквест
