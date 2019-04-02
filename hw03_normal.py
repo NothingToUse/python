@@ -69,18 +69,19 @@ elif user_input_task == 3:
     print('Задача - 3')
 
     def func_filter(func, itr):
-        newitr = [el for el in itr if func(el)]
-        if type(itr) is str:
-            newitr = str(newitr)
-        elif type(itr) is int:
-            newitr = int(newitr)
-        elif type(itr) is float:
-            newitr = float(newitr)
-        elif type(itr) is set:
-            newitr = set(newitr)
-        elif type(itr) is tuple:
-            newitr = tuple(newitr)
-        return newitr
+        empty_itr = []
+        for i in range(len(itr)):
+            if func(itr[i]) == True:
+                empty_itr.append(itr[i])
+        return empty_itr
+
+
+    func = lambda x: True if x % 2 == 0 else False
+
+
+    itr = [-1, 2, 9, 10, 4]
+    print(func_filter(func, itr))
+
 
 elif user_input_task == 4:
     print('Задача - 4')
